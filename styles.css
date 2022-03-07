@@ -1,0 +1,155 @@
+/* Import a google font to use in the entire page */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* The predefine margins and paddings are reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+/* The principal div width is set to 760 pixeles and center to the window */
+#wrapper {
+  width: 920px;
+  margin: auto;
+}
+
+/* The navigation bar is set with a height of 60px and a text align to the left 
+    also has a margin to the left and the bottom*/
+nav {
+  height: 60px;
+  text-align: left;
+  margin: 0.25rem 0px 0.18rem 0.5rem;
+}
+
+/* The list style is removed */
+nav ul {
+  list-style-type: none;
+}
+
+/* The items are ordered in line */
+nav ul li {
+  display: inline-block;
+}
+
+/* The anker tag is set the color background and the text
+     decoration of the links are removed */
+nav a {
+  padding: 1.2rem 1rem;
+  background: rgb(98, 151, 195);
+  color: white;
+  display: block;
+  text-decoration: none;
+  /* The radius of the border is set to give it like a drop shape */
+  border-radius: 3px 15px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+/* When the links are hover the box changes its color and 
+    it is set a box shadow */
+nav a:hover {
+  background-color: rgb(127, 127, 241);
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  box-shadow: 0px 10px 13px -7px rgb(58, 57, 57);
+}
+
+#selected {
+  background-color: rgb(98, 98, 243);
+}
+
+/* The heigth of the header container is set to 220 pixels and
+ it is set the image background with the cover property to fit 
+ all the image within*/
+header {
+  height: 220px;
+  background-image: url("./assets/tayrona_park.jpg");
+  background-position: 50% 75%;
+  background-size: cover;
+}
+
+/* The h1 is positioned relative to the parent and move center
+  it is also set a text shadow to highlight the text*/
+h1 {
+  position: relative;
+  top: 80px;
+  left: 50px;
+  width: 80%;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+/* The sidebar section is aligned to the right and the text is justify*/
+aside {
+  float: right;
+  width: 320px;
+  padding: 1.6rem;
+  line-height: 1.7rem;
+  font-size: small;
+  text-align: justify;
+  border-right: 1px solid rgb(213, 213, 219);
+}
+
+/* The titles h3 are transformed to uppercase */
+aside h3 {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+aside a {
+    text-decoration: none;
+    color: rgb(127, 127, 241);
+  }
+
+/* The main section is aligned to the left with a background color */
+section {
+  width: 496px;
+  height: 520px;
+  float: left;
+  padding: 1.6rem;
+  line-height: 1.7rem;
+  text-align: justify;
+  background-color: rgb(213, 213, 219);
+}
+
+/* The h2 and the paragrapth are set with a margin at the bottom */
+section h2,
+section p {
+  margin-bottom: 1rem;
+}
+
+section h3 {
+  text-transform: uppercase;
+}
+
+section a {
+  text-decoration: none;
+  color: rgb(127, 127, 241);
+}
+
+/* The footer has a 60 pixels height and clear both elements above it
+    with a font size smaller than the other elements*/
+footer {
+  height: 60px;
+  background-color: rgb(245, 219, 100, 0.8);
+  clear: both;
+  padding: 0.8rem 1.8rem;
+  line-height: 1.7rem;
+  font-size: smaller;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(127, 127, 241);
+}
+
+footer a:hover {
+  color: rgb(76, 76, 245);
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+
+/* The alternate navigation links are align to the right */
+#altnav {
+  float: right;
+  padding: 0;
+}
